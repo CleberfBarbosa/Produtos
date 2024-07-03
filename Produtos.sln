@@ -11,19 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5AC88DE1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fixtures", "tests\Fixtures\Fixtures.csproj", "{B947701E-3E6E-404C-9986-32DD25EA67E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{A961F4F8-CBE5-4E96-83F0-C186AC22C7B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Dominio\Dominio.csproj", "{A961F4F8-CBE5-4E96-83F0-C186AC22C7B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{B739A078-6EED-4042-A56B-ACE99881D690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra", "Infra\Infra.csproj", "{B739A078-6EED-4042-A56B-ACE99881D690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.IoC", "Infra.IoC\Infra.IoC.csproj", "{27FE02C1-895E-43F7-846C-7679F936AD4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.IoC", "Infra.IoC\Infra.IoC.csproj", "{27FE02C1-895E-43F7-846C-7679F936AD4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.Test", "tests\Infra.Test\Infra.Test.csproj", "{02BAED7E-B235-4511-AC7B-FB06C5822910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Test", "tests\Infra.Test\Infra.Test.csproj", "{02BAED7E-B235-4511-AC7B-FB06C5822910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicacao", "Aplicacao\Aplicacao.csproj", "{91B9919C-CD65-4A2B-A7BF-28A73972DCD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplicacao", "Aplicacao\Aplicacao.csproj", "{91B9919C-CD65-4A2B-A7BF-28A73972DCD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicacao.Test", "tests\Aplicacao.Test\Aplicacao.Test.csproj", "{98C62A68-7BCC-4BC0-BC3A-5A2E4A517B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aplicacao.Test", "tests\Aplicacao.Test\Aplicacao.Test.csproj", "{98C62A68-7BCC-4BC0-BC3A-5A2E4A517B92}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{FFC2C8BD-E102-46DB-8B12-CD93D9CD32C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{114F6B9E-C3AE-47B4-BED0-D28E10F257A4}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection

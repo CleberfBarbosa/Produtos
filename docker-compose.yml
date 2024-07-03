@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.4'
 
 services:
   sqlserver:
@@ -9,17 +9,23 @@ services:
       MSSQL_PID: "Express"
     ports:
       - "1433:1433"
+    networks:
+      - produtos-network
     volumes:
       - ./sqlserver/data:/var/opt/mssql/data
 
   produtos:
-    image: produtos-teste-isthmus-cleber:latest
-    build: 
-      context: .
-      dockerfile: ./Produtos.Api/Dockerfile
+    image: cleberfbarbosa/isthmus-produtos-teste:latest
     environment:
-      DatabaseProperties__ConnectionString: "Host=127.0.0.1:1433;Username=admin;Password=TesteProdutosIsthmusSistemas!;Database=produtos"
+      - DatabaseProperties__ConnectionString=Data Source=sqlserver,1433;Initial Catalog=produtos;User Id=sa;Password=TesteProdutosIsthmusSistemas!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;
+      - ASPNETCORE_ENVIRONMENT=Development
     ports: 
-      - "8080:8080"
+      - "35456:8080"
+    networks:
+      - produtos-network
     depends_on: 
       - sqlserver
+
+networks:
+  produtos-network:
+    driver: bridge
